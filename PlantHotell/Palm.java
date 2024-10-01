@@ -1,15 +1,15 @@
-package Sprint1.PlantHotell_Inlamningsuppgift1;
+package Sprint1.PlantHotell_Inlamningsuppgift1.PlantHotell;
 
-//Ärver från växt och implementerar interfacet vätskebehov
-public class KöttätandeVäxt extends Växt implements VätskeBehov {
+
+public class Palm extends Växt implements VätskeBehov {
 
     //Inkapsling av variabler, de är privata och getter används för att hämta datan.
     private double längd;
-    private static final double BASVÄTSKA = 0.1;
 
 
-    //Konstruktor
-    public KöttätandeVäxt(String namn, double längd, VäxtTyp typ) {
+
+    // Konstruktor
+    public Palm(String namn, double längd, VäxtTyp typ) {
         super(namn, typ);
         this.längd = längd;
     }
@@ -25,13 +25,10 @@ public class KöttätandeVäxt extends Växt implements VätskeBehov {
         return super.getNamn() + " behöver: "+ vätskeMängd() + " liter " + getTyp().getVätskeSort() + " per dag.";
     }
 
-    //Metod för att räkna ut vätskemängd för köttätande växter
+    //Metod för att räkna ut vätskemängd för palmer
     @Override
     public double vätskeMängd() {
-        return getTyp().getVätskaPerDag() * getLängd() + BASVÄTSKA;
+        return getTyp().getVätskaPerDag() * getLängd();
     }
-
-
-
 
 }

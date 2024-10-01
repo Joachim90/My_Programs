@@ -1,4 +1,4 @@
-package Sprint1.PlantHotell_Inlamningsuppgift1;
+package Sprint1.PlantHotell_Inlamningsuppgift1.PlantHotell;
 
 public class Kaktus extends Växt implements VätskeBehov {
 
