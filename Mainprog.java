@@ -38,7 +38,7 @@ public class Mainprog {
                 JOptionPane.showMessageDialog(null, växter[3]);
 
             // Om input är "alla" skrivs hela listan ut med en for-loop.
-            }else if (input.equals("alla".toLowerCase())) {
+            }else if (input.equals("alla")) {
                 for(int i = 0 ; i < växter.length ; i++) {
                     JOptionPane.showMessageDialog(null, växter[i]);
                 }
